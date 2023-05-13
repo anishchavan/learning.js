@@ -12,5 +12,16 @@
 
 // another way of declaring array
 
-let names = new Array('nilesh', 'manish', 'santosh')
-console.log(names)
+// let names = new Array('nilesh', 'manish', 'santosh')
+// console.log(names)
+// names.push('anish')
+// console.log(names)
+
+// console.log(names.slice(0,2))
+// names.push('vaibhav')
+// console.log(names)
+// console.log(names.slice(2,4))
+
+let fruits=['banana', 'pineapple','orange', 'grapes', 'sapota']
+fruits.splice(2,2,'watermelon', 'guava')
+console.log(fruits)
