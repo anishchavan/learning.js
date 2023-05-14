@@ -22,9 +22,10 @@
 // console.log(names)
 // console.log(names.slice(2,4))
 
-// let fruits=['banana', 'pineapple','orange', 'grapes', 'sapota']
-// fruits.splice(2,2,'watermelon', 'guava')
-// console.log(fruits)
+// splice
+let fruits=['banana', 'pineapple','orange', 'grapes', 'sapota']
+fruits.splice(2,2,'watermelon', 'guava')
+console.log(fruits)
 
 // concationations
 
@@ -85,5 +86,30 @@
 // console.log(stationary)
 
 // converting string to array
-let myName = 'Anish'
-console.log(myName.split(''))
+// let myName = 'Anish'
+// console.log(myName.split(''))
+
+// for of
+// let fruits = ['sapota','strwaberry','banana','pineapple','apple']
+// let fruitsInUppercase = []
+// for (const etables of fruits) {
+//     fruitsInUppercase.push(etables.toUpperCase())
+// }
+// console.log(fruitsInUppercase)
+
+// break and continue
+// for (let index = 0; index <= 5; index++) {
+//     if (index == 3) {
+//         break;
+        
+//     }
+//     console.log(index)
+// }
+
+// for (let index = 0; index <= 5; index++) {
+//     if (index == 3) {
+//         continue;
+        
+//     }
+//     console.log(index)
+// }
