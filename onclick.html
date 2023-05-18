@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse event onclick</title>
+  </head>
+  <body>
+    <p id="fsjs"></p>
+    <button onclick="eventHandler()" id="fsjs2">Submit</button>
+
+    <script>
+      function eventHandler() {
+        let value = prompt("What is 30-20");
+        if (value == 10) {
+          document.getElementById("fsjs").innerText =
+            "You hava got the access as you hava entered the correct value.";
+          document.getElementById("fsjs2").style.backgroundColor = "green";
+        } else {
+            document.getElementById('fsjs').innerText = 'Plese enter the valid input'
+            document.getElementById('fsjs2').style.backgroundColor ='red'
+        }
+      }
+    </script>
+  </body>
+</html>

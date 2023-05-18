@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM and JavaScript</title>
+  </head>
+  <body>
+    <h1>Hello this is my heading</h1>
+    <h2></h2>
+    <span></span>
+    <p>This one is my paragraph</p>
+    <ul>
+      <!-- instead of writing li tag manually i will be adding with the help fo javascript -->
+    </ul>
+    <script>
+      // insert li elements under ul tags
+      const listItems = `
+            <li>Rohit</li>
+            <li>Virat</li>
+            <li>Suryakumar</li>
+        `;
+      const unorderedList = document.querySelector("ul");
+      unorderedList.innerHTML = listItems;
+
+      // adding an element
+    //   let title = document.querySelector("h2");
+    //   title.style.color = "red";
+    //   title.style.background = "yellow";
+    //   title.className = "addingClass";
+    //   title.textContent = "This is content of the h2 tag";
+    //   document.body.appendChild(title)
+    //   document.body.removeChild(title)
+
+    //   let span = document.querySelector("span");
+    //   span.style.color = "green";
+    //   span.style.background = "yellow";
+    //   span.textContent = "this one is my span element";
+
+      for (let i = 0; i < 4; i++) {
+        let nel = document.createElement('li')
+        nel.style.color = 'blue'
+        nel.style.backgroundColor = 'yellow'
+        nel.className='newClass'
+        nel.textContent = i;
+        console.log(nel)
+        document.body.appendChild(
+            nel
+        )
+        
+      }
+    </script>
+  </body>
+</html>
