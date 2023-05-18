@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listener</title>
+  </head>
+  <body>
+    <p id="unique">Event yet to happen</p>
+
+    <button class="btn">Button yet to be clicked</button>
+
+    <script>
+      document.addEventListener("click", clickHandler);
+      function clickHandler() {
+        document.getElementById("unique").innerText = "Mouse was clicked";
+      }
+
+      document
+        .querySelector(".btn")
+        .addEventListener("dblclick", dblClickHandler);
+      function dblClickHandler() {
+        let task = document.querySelector(".btn").innerText =
+          "button was double clicked";
+    document.querySelector('.btn').style.backgroundColor = 'green';
+      }
+    </script>
+  </body>
+</html>
